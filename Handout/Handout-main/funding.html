@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FUNDRAISER</title>
+    <!-- <link rel="stylesheet" href="styling1.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Comme&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* css reset */
+*{
+    margin : 0;
+    padding : 0;
+}
+
+html{
+    scroll-behavior:smooth ;
+}
+
+/*css variables */
+:root{
+    --navbar-height: 60px;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+    
+}
+
+/* navigation bar list styling */
+#navbar ul{
+    display:flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+#navbar ul li a{
+    color:#85DA12;
+    display: block;
+    padding: 7px 33px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: #85DA12;
+    }
+
+/*home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 724px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(images/frontpage.jpg) no-repeat center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 1.99;
+}
+#home h1{
+    color: #85DA12;
+    text-align: left;
+
+}
+#home p{
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+}
+/* why handout*/
+#whyhandout{
+    margin :5px;
+    display: flex;
+}
+#whyhandout .box{
+    border: 2px solid black;
+    padding: 30px;
+    margin:3px 6px;
+    border-radius: 30px;
+    background-color: rgb(240, 238, 238);
+}
+#whyhandout .box img{
+    height: 99px;
+    margin: auto;
+    display: block;
+}
+
+#whyhandout .box p{
+    font-family: 'Comme', sans-serif;
+}
+#OurLocation{
+    background-color: rgb(241, 241, 241);
+}
+#OurLocation p{
+   font-family: 'Comme', sans-serif;
+   font-size: 1.3rem;
+   color: rgb(76, 71, 71);
+}
+/*contact section*/
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    box-shadow:0 0 40px 0;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(call2.png);
+    /*transform:translate(-50%,-50%);*/
+    background-color: rgb(240, 238, 238);
+    position: absolute;
+}
+form{
+    margin:20px;
+}
+.input-field
+{
+    width: 300px;
+    height: 47px;
+    margin-top: 20px;
+    padding-left: 38px;
+    padding-right: 40px ;
+    
+    border: 2.4px solid #85DA12;
+    border-radius: 18px;
+    outline: none;
+}
+.textarea-field
+{
+    height: 150px;
+    padding-top: 10px;
+}
+.btn1
+{
+
+    border-radius: 20px;
+    padding: 16px;
+    color:white;
+    border-radius: 8px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: none;
+    background-color:rgb(141, 138, 138);
+    cursor: pointer;
+}
+.btn1:hover{
+    color: white;
+    background-color: #85DA12;
+}
+
+    
+#Contactus{
+    display: flex;
+    margin: 5px ;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+}
+#Contactus .box{
+    background-color:  rgb(241, 241, 241);
+}
+
+#Contactus .box img{
+    display: flex; 
+    height: 20%;
+    margin: auto;
+    display: block ;
+    justify-content: center;
+    display: block;
+}
+#Contactus .box p{
+    display: flex;
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: 'Comme', sans-serif;
+    color: rgb(76, 71, 71);
+}
+#payment .box{
+    background-color:  rgb(241, 241, 241);
+}
+#payment .box p{
+    font-family: 'Comme',sans-serif;
+    font-size: 1.5rem;
+    color: rgb(76, 71, 71);
+}
+
+
+
+/*utility class*/
+.h-primary{
+    font-size: 4rem;
+    padding: 15px;
+    color: #85DA12;
+}
+
+.h-secondary{
+    font-size: 1.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 8px 20px;
+    border: 2px solid white;
+    font-size: 1rem ;
+    color:#85DA12;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: rgb(112, 104, 104);
+    cursor: pointer;
+}
+
+.btn:hover{
+    color:white;
+    background-color: #85DA12;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+</style>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#OurLocation">Join us</a></li>
+            <li class="item"><a href="#payment-container">Raise funds</a></li>  
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to<br> Fundraising</h1>
+        <p> Be a part of break through.</p>
+        <p>  Your contribution can help acheive a solution.</p><br>
+        <button class="btn">Start  fundraiser</button>
+        
+    </section>
+
+<section class="whyhandout-container">
+        <h1 class="h-primary center">Why Choose Handout</h1>
+        <div id="whyhandout">
+            <div class="box">
+                <img src="images/img1.png" alt="">
+                <h2 class="h-secondary center">Dedicated Relationship Manager</h2>
+                <p class="center">Dedicated relationship manager to address all your fundraising needs.</p>
+                    <p class="center"> Receive help and support anytime,anywhere</p>
+                </div> 
+                <div class="box">
+                        <img src="images/img2.png" alt="">
+                        <h2 class="h-secondary center">24*7 Expert Support</h2>
+                        <p class="center">Expert support at your serive whenever you need.</p>
+                        </div>
+                <div class="box">
+                        <img src="images/img3.png" alt="">
+                        <h2 class="h-secondary center">Simple setup</h2>
+                        <p class="center">Set up your fundraiser effortlessly by following simple steps.</p>
+                            </div>
+                <div class="box">
+                        <img src="images/img4.png" alt="">
+                        <h2 class="h-secondary center">Smart dashboard</h2>
+                        <p class="center">Access the interactive dashboard for managing the fundraiser details</p>
+                            </div>
+                <div class="box">
+                        <img src="images/img5.png" alt="">
+                        <h2 class="h-secondary center">Safety and Security</h2>
+                        <p class="center">The most secure encrytion technology to keep your funds safe. </p>
+                             </div>     
+                              </div><br><br>
+
+
+    </section>
+    <section class="OurLocation">
+        <section id="OurLocation">
+        <h1 class="h-primary center">Our Location</h1>
+        <p class="center"> <b>Sector 29,Nigdi Pradhikaran,Pimpri-Chinchwad,near Akurdi Railway Station,Pune,Maharashtra 411044</p></b><br>
+        <div class=" center location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.4266080271127!2d73.7560178504371!3d18.644842870165867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9f1ca8dab03%3A0x6237cfbd36f9acf9!2sD.Y.%20Patil%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1674675162029!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="mymap"></iframe>
+        </div>
+    </section>
+</section><br><br>
+    <section class="Contactus-container">
+        <div id="Contactus">
+            <div class="box">
+                <h1 class="h-primary center">Contact Us</h1><br>
+                <img src="images/contactus2.png" alt=""> <br><br>
+                <p class="left"><b>We are here to help you and answer any questions you may have.Here is how to reach us!</b></p><br>
+            </div>
+        </div><br><br>
+</section>
+<section id="payment-container">
+    <div id="payment">
+        <div class="box">
+        <h1 class="h-primary center">Pay here!</h1>
+        <p class="center"><b>Your small contribution will make a huge difference.</b></p>
+        <p class="center"><b>"We make a living by what we get, but we make a life by what we give.”</b></p><br>
+        <div class="center payment">
+            <img src="images/scanner1.png" alt="" width="350" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" > 
+        </div>
+        </div>
+        </div>
+    </section>
+</section>
+<section class="contactus-container">
+    <div class="contact-box">
+        
+            <form>
+                <input type="text" class="input-field" placeholder="Enter name"><br>
+                <input type="email" class="input-field" placeholder="Enter email id"><br>
+                <input type="text" class="input-field" placeholder="Enter address"><br>
+                <input type="text" class="input-field" placeholder="Enter phone number"><br>
+                <input type="number" class="input-field" placeholder="Enter amount"><br>
+                <input type="text" class="input-field text-area field" placeholder="Your thoughts">  
+                <br>
+                <button type="button" class="btn1">Send message</button><br>
+            </form>
+          </div>
+    </section><br><br>
+</body>
+</html>

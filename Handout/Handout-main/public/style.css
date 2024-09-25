@@ -1,0 +1,414 @@
+ body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color:white;
+	color: black;
+}
+
+header {
+	background-color: white;
+	color: black;
+	text-align: center;
+	padding: 25px;
+	height: max-content;
+	background-image:url("https://images.squarespace-cdn.com/content/v1/5e8b630283744b7f98f25dc2/1591208806203-GX6S0YCIZ5B3QIM5UHTR/RedSongbirdFoundation_Donate.jpg?format=2500w");
+	/* margin-right:10%; */
+}
+
+/* header.xxx{
+	color: black;
+	padding: 1%;
+	height: 90px;
+	
+} */
+
+nav .navbar-toggler-icon.icon {
+	display:none;
+  }
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0%;
+	overflow: hidden;
+	/* background-color:white; */
+	float: none;
+}
+
+
+nav li a {
+	display: block;
+	color: white;
+	text-align:center;
+	padding: 14px 10px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color:#609c0c;	
+}
+
+main {
+	margin: 20px;
+	padding: 5%;
+}
+
+p.span{
+	text-align:center;
+	color: white;
+	padding-top:15%;
+	color: #99de39;
+}
+
+
+p{
+	text-decoration-color: black;
+	color: black;
+
+}
+
+.gradient-background {
+	background: linear-gradient(300deg, white,#b9ed71, #1d8d07);
+	background-size: 200% 180%;
+	animation: gradient-animation 18s ease infinite;
+	border-radius: 6%;
+	padding-top: 6%;
+	padding-bottom: 4%;
+ }
+  
+section {
+	margin-bottom: 20px;
+	padding-top:0%;
+	padding-bottom: 2%;
+	padding-left: 2%;
+}
+
+h3{
+	color: white;
+}
+h2 {
+	color:white;
+	font-weight: bolder;
+	
+}
+
+h1 {
+	
+	background-image: -webkit-radial-gradient();
+	color: white;
+	padding: 10%;
+	text-align: left;
+}
+
+form label {
+	display: inline-block;
+	width: 150px;
+}
+
+.btn{
+	transition-duration: 0.4s;
+	padding: 2%;
+	margin-right: 5;
+	color: #85DA12;
+	background-attachment:scroll;
+	border-color: white;
+   	
+}
+
+.btn-1{
+	transition-duration: 0.4s;
+	padding: 1%;
+	margin-right: 4;
+	color: black;
+	border-color: white;
+	display: flex;
+	
+}
+
+.btn-1:hover {
+	background-color: #85DA12; /* Green */
+	color:white;
+  }
+
+
+.btn:hover {
+	background-color: #0a8214; /* Green */
+	color:white;
+  }
+
+a{
+	color:#85DA12;
+}
+ 
+/* form input[type=text],
+form input[type=email],
+form label[type=food-type],
+form input[type=number] */
+.container{
+	padding: 3%;
+
+}
+
+.col-lg-6{
+	float: inline-start;
+}
+.container-fluid{
+	padding-bottom: 0%;
+	
+}
+
+.about{
+	padding-top: 1%;
+	padding-bottom:  0%;
+	text-align: center;
+	display: flexbox;
+	padding: 1%;
+	text-decoration-color: black;
+	color: #85DA12;
+	
+}
+
+.donate-section{
+	padding: 0%;
+	font-style: normal;
+	text-align: left;
+	margin: auto;
+}
+
+
+
+p, h6{
+	text-align: left;
+	text-align: center;
+	font-size:large;
+}
+
+.big{
+	text-align: center;
+	
+}
+.slogan__icon{
+	text-align: center;
+	color: #7cd50f;
+	
+}
+.abt{
+	text-align: center;
+	padding: 1%;
+	color: #85DA12;
+}
+.non{
+	text-align: center;
+	padding-bottom:  2%;
+    font-weight: bolder;
+    color: #4f4e4e;
+}
+ 
+.form-floating{
+	padding-left: 10%;
+	padding-right: 30%;
+}
+.xxx{
+	color: #85DA12;
+	font-size: 45px;
+	font-size: bold;
+	
+}
+
+
+
+
+.color{
+	color: black;
+	font-weight: bolder;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+
+
+main.cards {
+	display:flex;
+	padding: 32px;
+	justify-content: space-around;
+	
+}
+
+main.cards section.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background: white;
+	padding: 1rem 1.5rem;
+	border-radius: 8px;
+	max-height: 468px;
+	margin-left: 32px;
+}
+
+main.cards section.card:first-child {
+	margin-left: 0;
+}
+
+main.cards section.card .icon {
+	width: 64px;
+	height: 64px;
+}
+
+main.cards section.card img {
+	width: 100%;
+}
+
+main.cards section.card h3 {
+	font-size: 100%;
+	margin: 18px 0;
+}
+
+main.cards section.card span {
+	font-weight: 500;
+	max-width: 240px;
+	font-size: 90%;
+	margin-bottom: 16px;
+}
+
+main.cards section.card button {
+	padding: 0.5rem 1rem;
+	text-transform: uppercase;
+	border-radius: 32px;
+	border: 0;
+	cursor: pointer;
+	font-size: 80%;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 16px 0;
+}
+
+main.cards section.card.donor button {
+	background: linear-gradient(to right, #7cd50f, #d2ebb9);
+}
+main.cards section.card.volun button {
+	background: linear-gradient(to right, #7cd50f, #d2ebb9);
+}
+main.cards section.card.outreach button {
+	background: linear-gradient(to right, #7cd50f, #d2ebb9);
+}
+main.cards section.card.aboutt button {
+	background: linear-gradient(to right, #7cd50f, #d2ebb9);
+}
+
+main.cards section.card.donor {
+	box-shadow: 20px 20px 50px -30px #242424;
+	
+}
+main.cards section.card.volun {
+	box-shadow: 20px 20px 50px -30px #242424;
+}
+main.cards section.card.outreach {
+	box-shadow: 20px 20px 50px -30px #242424;
+}
+main.cards section.card.aboutt {
+	box-shadow: 20px 20px 50px -30px #242424;
+}
+
+@media screen and (max-width: 720px) {
+	main.cards {
+		flex-direction: column;
+	}
+
+	main.cards section.card {
+		margin-left: 0;
+		margin-bottom: 32px;
+	}
+
+	main.cards section.card:last-child {
+		margin-bottom: 0;
+	}
+
+	main.cards section.card button {
+		font-size: 70%;
+	}
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.containerr{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8),url("https://media.istockphoto.com/id/1177156986/photo/free-food-for-the-homeless-and-the-hungry-food-donation-concepts.jpg?s=612x612&w=0&k=20&c=J_vrsDpsERIsyej_f0ApIwqOnDEWt1uqfj67LvxloGk="));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* 
+testimonials */
+
+.items {
+		max-width: 700px;
+		margin: auto;
+		background-color: white;
+	   
+	
+	
+	}
+	
+	.containertest{
+		background-color:#a4e24e;
+		border-radius: 10px;
+	}
+	.containertest:hover{
+		background-color: rgb(133, 224, 84);
+	}
+	
+	.items img{
+		width: 110px;
+		height: 110px;
+		object-fit: cover;
+		object-position: top;
+		border-radius: 100%;
+	}
+	
+	.stars i{
+		
+		font-size: 1.5rem;
+		padding: 0.5rem;
+	}
+	.items q{
+		margin-top: 1.5rem;
+		font-size: 1.2rem;
+	}
+	.carousel-indicators{
+		position: relative;
+		margin-top: 1.5rem;
+	}
+	.carousel-indicators [data-bs-target] {
+			position: relative;
+			background-color: black;
+			border-radius: 100%;
+			width: 20px;
+			height: 20px;
+			font-size: 1.3rem;
+		}
+	.carousel-indicators:hover [data-bs-target]{
+		color: black;
+	
+	}
+	.carousel-control-next-icon, .carousel-control-prev-icon {
+		background-color: #85DA12;
+		display: inline-block;
+		width: 2rem;
+		height: 2.5rem;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: 50% center;
+	}

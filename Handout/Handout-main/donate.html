@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+  * {
+    margin: 0;
+    padding: 5;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  
+  
+  main.cards {
+    display:flex;
+    padding-top:  10%;
+    padding: 3%;
+    justify-content: space-around;
+    overflow:auto;
+    align-items: center;
+
+   
+  }
+  
+  main.cards section.card {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    height: 400px;
+    width:340px;
+    margin-left: 32px;
+    
+  }
+  
+  main.cards section.card:first-child {
+    margin-left: 0;
+  }
+  
+  main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+  }
+  
+  main.cards section.card img {
+    width: 100%;
+  }
+  
+  main.cards section.card h3 {
+    font-size: 24px;
+    margin: 18px 0;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  main.cards section.card span {
+    font-weight: 500;
+    max-width: 240px;
+    font-size: 95%;
+    margin-bottom: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  main.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px 0;
+  }
+  a{
+    color: white;
+  }
+  main.cards section.card.donor button {
+    background: linear-gradient(to right, #7cd50f, #d2ebb9);
+  }
+  main.cards section.card.volun button {
+    background: linear-gradient(to right, #7cd50f, #d2ebb9);
+  }
+  main.cards section.card.outreach button {
+    background: linear-gradient(to right, #7cd50f, #d2ebb9);
+  }
+  main.cards section.card.aboutt button {
+    background: linear-gradient(to right, #7cd50f, #d2ebb9);
+  }
+  
+  main.cards section.card.donor {
+    box-shadow: 20px 20px 50px -30px black;
+    
+  }
+  main.cards section.card.volun {
+    box-shadow: 20px 20px 50px -30px black;
+  }
+  main.cards section.card.outreach {
+    box-shadow: 20px 20px 50px -30px black;
+  }
+  main.cards section.card.aboutt {
+    box-shadow: 20px 20px 50px -30px black;
+  }
+  
+  @media screen and (max-width: 720px) {
+    main.cards {
+      flex-direction: column;
+    }
+  
+    main.cards section.card {
+      margin-left: 0;
+      margin-bottom: 32px;
+    }
+  
+    main.cards section.card:last-child {
+      margin-bottom: 0;
+    }
+  
+    main.cards section.card button {
+      font-size: 70%;
+    }
+  }  
+</style>
+<body>
+  
+  <section>
+
+    <main class="cards">
+    <section class="card donor">
+      <div class="icon">
+        <img src="images/undraw_Developer_activity_re_39tg (1).png" alt="Donor Tracking.">
+      </div>
+      <h3 class="color">FOOD</h3>
+      <span>If You Cannot Feed A Hundered People, Then Feed Atleast One.</span>
+      <button><a href="https://ipyzh0m4miz.typeform.com/to/BBUBSg5J">Donate</a></button>
+    </section>
+    <section class="card volun">
+      <div class="icon">
+        <img src="images/undraw_task_list_6x9d.png" alt="Voluntree Mangement">
+      </div>
+      <h3 class="color">CLOTHES</h3>
+      <span>Give Clothes To Make Every Cent Worth.Clothes Will Warm A Trembling Heart.</span>
+      <button> <a href="https://ipyzh0m4miz.typeform.com/to/vm0xAt5P"> Donate</a></button>
+    </section>
+    <section class="card outreach">
+      <div class="icon">
+        <img src="images/undraw_Active_support_re_b7sj.png" alt="Outreach Support">
+      </div>
+      <h3 class="color">BOOKS & STATIONARY</h3>
+      <span>Whatever The Cost Of Our Libraries,The Price Is Cheap Compared To That Of An Ignorant Nation.</span>
+      <button> <a href="https://ipyzh0m4miz.typeform.com/to/pzzGKZo7"> Donate</a></button>
+    </section>
+    <section class="card aboutt">
+      <div class="icon">
+        <img src="images/undraw_Savings_re_eq4w.png" alt="About us.">
+      </div>
+      <h3 class="color">OTHERS</h3>
+      <span>Giving Is Not Just About Making A Donation,It Is About Making A Difference.</span>
+      <button><a href="https://ipyzh0m4miz.typeform.com/to/pWdnAWWb"> Donate</a></button>
+    </section>
+  </main>
+  </section>
+
+
+
+
+
+</body>
+</html>
